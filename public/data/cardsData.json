@@ -6,7 +6,8 @@
     "salePrice": 79,
     "regularPrice": 139,
     "goldRating": false,
-    "new": true
+    "new": true,
+    "quantity": 32
   },
   {
     "id": 2,
@@ -15,7 +16,9 @@
     "salePrice": 79,
     "regularPrice": 89,
     "goldRating": false,
-    "new": true
+    "new": true,
+    "quantity": 12
+
   },
   {
     "id": 3,
@@ -24,7 +27,9 @@
     "salePrice": 60,
     "regularPrice": null,
     "goldRating": false,
-    "new": true
+    "new": true,
+    "quantity": 15
+
   },
   {
     "id": 4,
@@ -33,7 +38,9 @@
     "salePrice": 129,
     "regularPrice": null,
     "goldRating": false,
-    "new": true
+    "new": true,
+    "quantity": 45
+
   },
   {
     "id": 5,
@@ -42,7 +49,9 @@
     "salePrice": 207,
     "regularPrice": null,
     "goldRating": true,
-    "new": true
+    "new": true,
+    "quantity": 31
+
   },
   {
     "id": 6,
@@ -51,7 +60,9 @@
     "salePrice": 89,
     "regularPrice": 109,
     "goldRating": false,
-    "new": true
+    "new": true,
+    "quantity": 54
+
   },
   {
     "id": 7,
@@ -60,7 +71,9 @@
     "salePrice": 89,
     "regularPrice": 139,
     "goldRating": false,
-    "new": true
+    "new": true,
+    "quantity": 23
+
   },
   {
     "id": 8,
@@ -69,6 +82,48 @@
     "salePrice": 119,
     "regularPrice": 138,
     "goldRating": true,
-    "new": true
+    "new": true,
+    "quantity": 12
+
+  },
+  {
+    "id": 9,
+    "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro13-1-270x350.jpg",
+    "name": "Woody table",
+    "salePrice": 60,
+    "regularPrice": null,
+    "goldRating": true,
+    "new": true,
+    "quantity": 66
+  },
+  {
+    "id": 10,
+    "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro302-270x350.jpg",
+    "name": "Lynn Storege",
+    "salePrice": 79,
+    "regularPrice": null,
+    "goldRating": true,
+    "new": true,
+    "quantity": 26
+  },
+  {
+    "id": 11,
+    "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro31-1-270x350.jpg",
+    "name": "Lynn Storege",
+    "salePrice": 79,
+    "regularPrice": null,
+    "goldRating": true,
+    "new": true,
+    "quantity": 16
+  },
+  {
+    "id": 12,
+    "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro41-1-270x350.jpg",
+    "name": "Round Basket",
+    "salePrice": 60,
+    "regularPrice": null,
+    "goldRating": true,
+    "new": true,
+    "quantity": 15
   }
 ]

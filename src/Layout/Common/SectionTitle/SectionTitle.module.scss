@@ -1,0 +1,34 @@
+@import "../../../Variables/Variables.module.scss";
+
+.sectionTitle {
+  max-width: 490px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+
+  h2 {
+    font-size: 28px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 15px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    span {
+      width: 40px;
+      height: 2px;
+      background-color: $green-color;
+
+    }
+  }
+
+  p {
+    color: #868686;
+    text-align: center;
+    line-height: 28px;
+  }
+}

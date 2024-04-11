@@ -88,28 +88,120 @@ export const Header = () => {
                         </div>
                         <div className={styles.navItem}>
                             <a href="/">SHOP</a>
-                            <div className={styles.dropDown}>
-                                <h3>SHOP LAYOUTS</h3>
-                                <a href="#">Shop Grid</a>
-                                <a href="#">Shop List</a>
-                                <a href="#">No Sidebar</a>
-                                <a href="#">Left Sidebar</a>
-                                <a href="#">Right Sidebar</a>
+                            <div className={`${styles.dropDown} ${styles.shopDropDown}`}>
+                                <div className={styles.shopDropdownColumn}>
+                                    <h3>SHOP LAYOUTS</h3>
+                                    <a href="#">Shop Grid</a>
+                                    <a href="#">Shop List</a>
+                                    <a href="#">No Sidebar</a>
+                                    <a href="#">Left Sidebar</a>
+                                    <a href="#">Right Sidebar</a>
 
-                                <h3>PRODUCT LAYOUTS</h3>
-                                <a href="#">Vertical Thumbnails</a>
-                                <a href="#">Extra Sidebar</a>
-                                <a href="#">No Sidebar</a>
-                                <a href="#">Right Sidebar</a>
-                                <a href="#">Left Sidebar</a>
+                                    <h3>PRODUCT LAYOUTS</h3>
+                                    <a href="#">Vertical Thumbnails</a>
+                                    <a href="#">Extra Sidebar</a>
+                                    <a href="#">Right Sidebar</a>
+                                    <a href="#">Left Sidebar</a>
+                                </div>
+
+                                <div className={styles.shopDropdownColumn}>
+                                    <h3>PRODUCT EXTENDS</h3>
+                                    <a href="#">Product Bundle</a>
+                                    <a href="#">Product 360 Deg</a>
+                                    <a href="#">Video</a>
+
+                                    <h3>PRODUCT LAYOUTS</h3>
+                                    <a href="#">Cart</a>
+                                    <a href="#">Wishlist</a>
+                                    <a href="#">Checkout</a>
+                                    <a href="#">Order Tracking</a>
+                                    <a href="#">My Account</a>
+                                </div>
+
+                                <div className={styles.shopDropdownColumn}>
+                                    <h3>PRODUCT TYPES</h3>
+                                    <a href="#">Single</a>
+                                    <a href="#">Variable</a>
+                                    <a href="#">External / Affiliate</a>
+                                    <a href="#">Grouped</a>
+                                    <a href="#">Out Of Stack</a>
+                                    <a href="#">Om Sale</a>
+
+                                </div>
+
 
                             </div>
                         </div>
                         <div className={styles.navItem}>
                             <a href="#">ELEMENTS</a>
+                            <div className={`${styles.dropDown} ${styles.elementsDropDown}`}>
+                                <div className={styles.elementsDropdownColumn}>
+                                    <h3>ELEMENT 1</h3>
+                                    <a href="#">Banner</a>
+                                    <a href="#">Blog Element</a>
+                                    <a href="#">Categories Element</a>
+                                    <a href="#">Product Element</a>
+                                </div>
+
+                                <div className={styles.elementsDropdownColumn}>
+                                    <h3>ELEMENT 2</h3>
+                                    <a href="#">Client</a>
+                                    <a href="#">Product Layout</a>
+                                    <a href="#">Google Maps</a>
+                                    <a href="#">Icon Box</a>
+                                    <a href="#">Team</a>
+                                </div>
+
+                                <div className={styles.elementsDropdownColumn}>
+                                    <h3>ELEMENT 3</h3>
+                                    <a href="#">Instagram Feed</a>
+                                    <a href="#">Newsletter</a>
+                                    <a href="#">Testimonials</a>
+
+
+                                </div>
+
+
+                            </div>
+
                         </div>
                         <div className={styles.navItem}>
                             <a href="#">BLOG</a>
+                            <div className={`${styles.dropDown} ${styles.blogDropDown}`}>
+                                <div className={styles.blogDropdownColumn}>
+                                    <h3>ELEMENT 1</h3>
+                                    <a href="#">No Sidebar</a>
+                                    <a href="#">Left Sidebar</a>
+                                    <a href="#">Right Sidebar</a>
+                                    <a href="#">Blog Standart</a>
+                                    <a href="#">Blog Grid</a>
+                                </div>
+
+                                <div className={styles.blogDropdownColumn}>
+                                    <h3>ELEMENT 2</h3>
+                                    <a href="#">No Sidebar</a>
+                                    <a href="#">Left Sidebar</a>
+                                    <a href="#">Right Sidebar</a>
+                                    <a href="#">Instagram In Post</a>
+                                    <a href="#">Product In Post</a>
+
+                                    <h3>ELEMENT 3</h3>
+                                    <a href="#">Standart</a>
+                                    <a href="#">Gallery</a>
+                                    <a href="#">Video</a>
+                                </div>
+
+                                <div className={styles.blogDropdownColumn}>
+                                    <h3>ELEMENT 3</h3>
+                                    <a href="#">Standart</a>
+                                    <a href="#">Gallery</a>
+                                    <a href="#">Video</a>
+
+
+                                </div>
+
+
+                            </div>
                         </div>
                         <div className={styles.navItem}>
                             <a href="#">PAGES</a>
