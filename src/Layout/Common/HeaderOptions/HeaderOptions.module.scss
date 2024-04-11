@@ -1,0 +1,50 @@
+@import "../../../Variables/Variables.module.scss";
+.headerOptions {
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    font-weight: 800;
+    gap: 30px;
+  &.dropShadow {
+    .drop {
+      padding-bottom: 0;
+      .dropDown {
+        top: 19px;
+        box-shadow: 0 0 5px rgba(128, 128, 128, 0.3);
+      }
+    }
+  }
+
+
+    .drop {
+      position: relative;
+      padding-bottom: 10px;
+      a {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .dropDown {
+        position: absolute;
+        display: flex;
+        background-color: white;
+        padding: 20px 100px 20px 10px;
+        left: 0;
+        top: 25px;
+        transition: opacity $transition;
+        pointer-events: none;
+        opacity: 0;
+        z-index: 3;
+        a {
+          white-space: nowrap;
+        }
+      }
+      &:hover {
+        .dropDown {
+          pointer-events: all;
+          opacity: 1;
+        }
+      }
+    }
+  }

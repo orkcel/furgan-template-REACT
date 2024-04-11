@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "FAST SHIPPING.",
+    "description": "With sites in 5 languages, we ship to over 200 countries",
+    "icon": "RocketLaunch"
+  },
+  {
+    "id": 2,
+    "title": "SAFE DELIVERY",
+    "description": "Pay with the world’s most popular, secure payment methods",
+    "icon": "LockKey"
+  },
+  {
+    "id": 3,
+    "title": "365 DAYS RETURN.",
+    "description": "Round-the-clock assistance for a shopping experience.",
+    "icon": "ArrowsClockwise"
+  }
+]

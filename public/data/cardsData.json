@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro61-1-270x350.jpg",
+    "name": "Swepper Funnel",
+    "salePrice": 79,
+    "regularPrice": 139,
+    "goldRating": false,
+    "new": true
+  },
+  {
+    "id": 2,
+    "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro151-1-270x350.jpg",
+    "name": "Office Chair",
+    "salePrice": 79,
+    "regularPrice": 89,
+    "goldRating": false,
+    "new": true
+  },
+  {
+    "id": 3,
+    "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro101-1-270x350.jpg",
+    "name": "Tulip Chair",
+    "salePrice": 60,
+    "regularPrice": null,
+    "goldRating": false,
+    "new": true
+  },
+  {
+    "id": 4,
+    "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro1113-270x350.jpg",
+    "name": "Alarm Clock",
+    "salePrice": 129,
+    "regularPrice": null,
+    "goldRating": false,
+    "new": true
+  },
+  {
+    "id": 5,
+    "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro141-1-270x350.jpg",
+    "name": "Chair AAC",
+    "salePrice": 207,
+    "regularPrice": null,
+    "goldRating": true,
+    "new": true
+  },
+  {
+    "id": 6,
+    "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro71-1-270x350.jpg",
+    "name": "Mass Sofa",
+    "salePrice": 89,
+    "regularPrice": 109,
+    "goldRating": false,
+    "new": true
+  },
+  {
+    "id": 7,
+    "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro91-1-270x350.jpg",
+    "name": "DAX ArmChair",
+    "salePrice": 89,
+    "regularPrice": 139,
+    "goldRating": false,
+    "new": true
+  },
+  {
+    "id": 8,
+    "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro1211-2-270x350.jpg",
+    "name": "Prix Chair",
+    "salePrice": 119,
+    "regularPrice": 138,
+    "goldRating": true,
+    "new": true
+  }
+]
