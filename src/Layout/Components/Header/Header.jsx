@@ -2,6 +2,7 @@ import {HeaderOptions} from "../../Common/HeaderOptions/HeaderOptions";
 import styles from "./Header.module.scss";
 import {MagnifyingGlass, User, ShoppingCartSimple} from "@phosphor-icons/react";
 import {useEffect, useState} from "react";
+import {Link} from "react-router-dom";
 
 export const Header = () => {
 
@@ -29,18 +30,19 @@ export const Header = () => {
                 <HeaderOptions headerPosition={headerPosition}/>
                 <div className={styles.headerMidSide}>
                     <div className={styles.logo}>
+                        <Link to="/">
                         <img
                             src="https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/logo.png"
                             alt="#"
                         />
+                        </Link>
                     </div>
                     <nav>
                         <div className={styles.navItem}>
-                            <a href="#">HOME</a>
+                            <Link to="/">HOME</Link>
                             <div className={`${styles.dropDown} ${styles.homeDropDown}`}>
                                 <div className={styles.dropdownRow}>
                                     <div className={styles.dropdownItem}>
-
                                         <a href="#"><img
                                             src="https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/demo001.jpg"
                                             alt="#"/></a>
@@ -87,17 +89,19 @@ export const Header = () => {
                             </div>
                         </div>
                         <div className={styles.navItem}>
-                            <a href="/">SHOP</a>
+                            <Link to="#">SHOP</Link>
                             <div className={`${styles.dropDown} ${styles.shopDropDown}`}>
                                 <div className={styles.shopDropdownColumn}>
-                                    <h3>SHOP LAYOUTS</h3>
+                                    <div className={styles.dropdownItem}></div>
+                                    <h3><span></span>SHOP LAYOUTS</h3>
                                     <a href="#">Shop Grid</a>
                                     <a href="#">Shop List</a>
                                     <a href="#">No Sidebar</a>
-                                    <a href="#">Left Sidebar</a>
+                                    <Link to="/left_side_bar">Left Sidebar</Link>
                                     <a href="#">Right Sidebar</a>
 
-                                    <h3>PRODUCT LAYOUTS</h3>
+                                    <div className={styles.dropdownItem}></div>
+                                    <h3><span></span>PRODUCT LAYOUTS</h3>
                                     <a href="#">Vertical Thumbnails</a>
                                     <a href="#">Extra Sidebar</a>
                                     <a href="#">Right Sidebar</a>
@@ -105,12 +109,14 @@ export const Header = () => {
                                 </div>
 
                                 <div className={styles.shopDropdownColumn}>
-                                    <h3>PRODUCT EXTENDS</h3>
+                                    <div className={styles.dropdownItem}></div>
+                                    <h3><span></span>PRODUCT EXTENDS</h3>
                                     <a href="#">Product Bundle</a>
                                     <a href="#">Product 360 Deg</a>
                                     <a href="#">Video</a>
 
-                                    <h3>PRODUCT LAYOUTS</h3>
+                                    <div className={styles.dropdownItem}></div>
+                                    <h3><span></span>OTHER PAGES</h3>
                                     <a href="#">Cart</a>
                                     <a href="#">Wishlist</a>
                                     <a href="#">Checkout</a>
@@ -119,7 +125,8 @@ export const Header = () => {
                                 </div>
 
                                 <div className={styles.shopDropdownColumn}>
-                                    <h3>PRODUCT TYPES</h3>
+                                    <div className={styles.dropdownItem}></div>
+                                    <h3><span></span>PRODUCT TYPES</h3>
                                     <a href="#">Single</a>
                                     <a href="#">Variable</a>
                                     <a href="#">External / Affiliate</a>
@@ -136,7 +143,8 @@ export const Header = () => {
                             <a href="#">ELEMENTS</a>
                             <div className={`${styles.dropDown} ${styles.elementsDropDown}`}>
                                 <div className={styles.elementsDropdownColumn}>
-                                    <h3>ELEMENT 1</h3>
+                                    <div className={styles.dropdownItem}></div>
+                                    <h3><span></span>ELEMENT 1</h3>
                                     <a href="#">Banner</a>
                                     <a href="#">Blog Element</a>
                                     <a href="#">Categories Element</a>
@@ -144,7 +152,8 @@ export const Header = () => {
                                 </div>
 
                                 <div className={styles.elementsDropdownColumn}>
-                                    <h3>ELEMENT 2</h3>
+                                    <div className={styles.dropdownItem}></div>
+                                    <h3><span></span>ELEMENT 2</h3>
                                     <a href="#">Client</a>
                                     <a href="#">Product Layout</a>
                                     <a href="#">Google Maps</a>
@@ -153,7 +162,8 @@ export const Header = () => {
                                 </div>
 
                                 <div className={styles.elementsDropdownColumn}>
-                                    <h3>ELEMENT 3</h3>
+                                    <div className={styles.dropdownItem}></div>
+                                    <h3><span></span>ELEMENT 3</h3>
                                     <a href="#">Instagram Feed</a>
                                     <a href="#">Newsletter</a>
                                     <a href="#">Testimonials</a>
@@ -169,33 +179,36 @@ export const Header = () => {
                             <a href="#">BLOG</a>
                             <div className={`${styles.dropDown} ${styles.blogDropDown}`}>
                                 <div className={styles.blogDropdownColumn}>
-                                    <h3>ELEMENT 1</h3>
+                                    <div className={styles.dropdownItem}></div>
+                                    <h3><span></span>BLOG LAYOUT</h3>
                                     <a href="#">No Sidebar</a>
-                                    <a href="#">Left Sidebar</a>
+                                    <Link to="left_side_bar">Left Sidebar</Link>
                                     <a href="#">Right Sidebar</a>
                                     <a href="#">Blog Standart</a>
                                     <a href="#">Blog Grid</a>
                                 </div>
 
                                 <div className={styles.blogDropdownColumn}>
-                                    <h3>ELEMENT 2</h3>
+                                    <div className={styles.dropdownItem}></div>
+                                    <h3><span></span>POST LAYOUT</h3>
                                     <a href="#">No Sidebar</a>
                                     <a href="#">Left Sidebar</a>
                                     <a href="#">Right Sidebar</a>
                                     <a href="#">Instagram In Post</a>
                                     <a href="#">Product In Post</a>
 
-                                    <h3>ELEMENT 3</h3>
+                                    <div className={styles.dropdownItem}></div>
+                                    <h3><span></span>POST FORMAT</h3>
                                     <a href="#">Standart</a>
                                     <a href="#">Gallery</a>
                                     <a href="#">Video</a>
                                 </div>
 
                                 <div className={styles.blogDropdownColumn}>
-                                    <h3>ELEMENT 3</h3>
-                                    <a href="#">Standart</a>
-                                    <a href="#">Gallery</a>
-                                    <a href="#">Video</a>
+                                    <div className={styles.dropdownItem}></div>
+                                    <div className={styles.imageWrapper}>
+                                        <img src="../../../../public/images/blogLamps.png" alt="#"/>
+                                    </div>
 
 
                                 </div>
@@ -206,7 +219,7 @@ export const Header = () => {
                         <div className={styles.navItem}>
                             <a href="#">PAGES</a>
                             <div className={styles.dropDown}>
-                                <a href="#">About</a>
+                                <Link to="/about">About</Link>
                                 <a href="#">Contact</a>
                                 <a href="#">Error 404</a>
                             </div>
@@ -222,12 +235,12 @@ export const Header = () => {
                     <div className={styles.user}>
                         <a href="#"><User/></a>
                         <div className={styles.userDropDown}>
-                            <a href="#">About</a>
-                            <a href="#">Contact</a>
-                            <a href="#">Error 404</a>
-                            <a href="#">Contact 404</a>
-                            <a href="#">Contact 404</a>
-                            <a href="#">Contact 404</a>
+                            <a href="#">Dashboard</a>
+                            <a href="#">Orders</a>
+                            <a href="#">Downloads</a>
+                            <a href="#">Address</a>
+                            <a href="#">Account Details</a>
+                            <a href="#">Logout</a>
 
                         </div>
                     </div>

@@ -1,13 +1,9 @@
-import { Home } from './Layout/Pages/Home/Home'
+import MainRouter from "./router.jsx";
 
 function App() {
 
   return (
-    // ФРАГМЕНТ
-    // чтобы ставить более одного блока
-    <>
-    <Home />
-    </>
+    <MainRouter />
   )
 }
 

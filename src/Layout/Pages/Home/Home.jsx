@@ -15,8 +15,8 @@ import { useCallback } from "react";
 import cardsData from "../../../../public/data/cardsData.json";
 import {Footer} from "../../Components/Footer/Footer.jsx";
 import SectionTitle from "../../Common/SectionTitle/SectionTitle.jsx";
-import sponsorsData from "/public/data/sponsorsData.json";
-import randomImagesData from "/public/data/randomImagesData.json";
+import {SponsorsContainer} from "../../Common/SponsorsContainer/SponsorsContainer.jsx";
+import {RandomImages} from "../../Common/RandomImages/RandomImages.jsx";
 
 
 export const Home = () => {
@@ -297,7 +297,7 @@ export const Home = () => {
           </div>
         </section>
 
-        <section className={styles.fourthSection}>
+        <section className={styles.fourthSection} >
           <div className={styles.fourthSectionContent}>
             <SectionTitle heading="From Our Blog"
                           title="Lorem ipsum dolor sit amet consectetur adipiscing elit erat vehicula ad, mollis viverra vulputate."/>
@@ -396,29 +396,9 @@ export const Home = () => {
         </section>
 
         <section className={styles.fifthSection}>
-          <div className={styles.sponsorsContainer}>
-            {sponsorsData.map((sponsor) => {
-              return (
-                  <div key={sponsor.id} className={styles.sponsor}>
-                    <img src={sponsor.imageUrl}
-                         alt="Sponsor"/>
-                  </div>
-              )
-            })}
-          </div>
-          <div className={styles.randomImgContainer}>
-            {randomImagesData.map((image)=>{
-              return (
-                  <div key={image.id} className={styles.randomImg}>
-                    <div className={styles.imageMask}>
-                      <p>0 <Chat /> <span></span> 0</p>
-                    </div>
-                    <img src={image.imageUrl}
-                         alt="Random Image"/>
-                  </div>
-              )
-            })}
-          </div>
+          <SponsorsContainer />
+          <RandomImages />
+
         </section>
       </main>
       <Footer/>

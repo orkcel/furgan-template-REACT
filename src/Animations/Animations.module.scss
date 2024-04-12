@@ -12,4 +12,31 @@
   85% { transform: scale(0.9); }
   100% { transform: scale(1); }
 }
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.5);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.9);
+    opacity: 0.6;
+  }
+  75% {
+    transform: scale(2.3);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(2.8);
+    opacity: 0.2;
+  }
+}
+
+.element {
+  animation: scaleAnimation 1s infinite;
+}
+
 

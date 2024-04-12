@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Frank Greer",
+    "position": "Operations",
+    "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/team-img4.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Annie Taylor",
+    "position": "Director",
+    "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/team-img1.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Peery Conner",
+    "position": "Partner",
+    "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/team6.jpg"
+  }
+]
