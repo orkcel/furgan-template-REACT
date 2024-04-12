@@ -11,7 +11,7 @@ import {
   Heart, MagnifyingGlass
 } from "@phosphor-icons/react";
 import containersData from "/public/data/containers.json";
-import { useCallback } from "react";
+import {useCallback, useEffect} from "react";
 import cardsData from "../../../../public/data/cardsData.json";
 import {Footer} from "../../Components/Footer/Footer.jsx";
 import SectionTitle from "../../Common/SectionTitle/SectionTitle.jsx";
@@ -20,7 +20,6 @@ import {RandomImages} from "../../Common/RandomImages/RandomImages.jsx";
 
 
 export const Home = () => {
-  
   const getIconComponent = useCallback((iconName) => {
     switch (iconName) {
       case "RocketLaunch":

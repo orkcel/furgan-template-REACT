@@ -1,0 +1,188 @@
+@import "../../../Variables/Variables.module.scss";
+nav {
+    display: flex;
+    align-items: center;
+    &.newDropDownPosition {
+        .navItem {
+            .dropDown {
+                &.homeDropDown {
+                    left: -215%;
+                }
+                &.shopDropDown{
+                    left: -340%;
+
+                }
+                &.elementsDropDown {
+                    left: -290%;
+                }
+                &.blogDropDown {
+                    left: -400%;
+                }
+            }
+
+        }
+    }
+    .navItem {
+        position: relative;
+        display: flex;
+        padding: 20px;
+
+        .dropDown {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 20px 100px 20px 10px;
+            left: 0;
+            top: 55px;
+            transition: opacity $transition;
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0;
+            &.homeDropDown {
+                left: -400%;
+                padding: 20px 20px 20px 10px;
+                box-shadow: 0 0 5px rgba(128, 128, 128, 0.3);
+
+                .dropdownRow {
+                    display: flex;
+
+                    .dropdownItem {
+                        display: flex;
+                        flex-direction: column;
+
+                        h5 {
+                            font-size: 16px;
+                            text-align: left;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+
+
+            }
+            &.shopDropDown {
+                left: -620%;
+                width: 1170px;
+                padding: 35px 20px;
+                box-shadow: 0 0 5px rgba(128, 128, 128, 0.3);
+                display: flex;
+                flex-direction: row;
+                gap: 220px;
+
+                .shopDropdownColumn {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+
+
+
+                    h3 {
+                        font-size: 13px;
+                        font-weight: 700;
+                        position: relative;
+
+                        span {
+                            position: absolute;
+                            display: block;
+                            width: 2px;
+                            height: 15px;
+                            background-color: $green-color;
+                            left: -15px;
+                            top: 15%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
+            &.elementsDropDown {
+                left: -410%;
+                width: 1170px;
+                padding: 35px 20px;
+                box-shadow: 0 0 5px rgba(128, 128, 128, 0.3);
+                display: flex;
+                flex-direction: row;
+                gap: 220px;
+
+                .elementsDropdownColumn {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+
+                    h3 {
+                        font-size: 13px;
+                        font-weight: 700;
+                        position: relative;
+
+                        span {
+                            position: absolute;
+                            display: block;
+                            width: 2px;
+                            height: 15px;
+                            background-color: $green-color;
+                            left: -15px;
+                            top: 15%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+            }
+            &.blogDropDown {
+                left: -410%;
+                width: 800px;
+                padding: 35px 20px;
+                box-shadow: 0 0 5px rgba(128, 128, 128, 0.3);
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+
+                .blogDropdownColumn {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+
+                    h3 {
+                        font-size: 13px;
+                        font-weight: 700;
+                        position: relative;
+
+                        span {
+                            position: absolute;
+                            display: block;
+                            width: 2px;
+                            height: 15px;
+                            background-color: $green-color;
+                            left: -15px;
+                            top: 15%;
+                            transform: translateY(-50%);
+                        }
+                    }
+
+                    .imageWrapper {
+                        width: 100%;
+                    }
+                }
+            }
+            a {
+                padding: 10px;
+                white-space: nowrap;
+                color: #868686;
+
+                &:hover {
+                    color: $green-color;
+                }
+            }
+        }
+        a {
+            position: relative;
+            font-weight: 600;
+            z-index: 2;
+        }
+        &:hover {
+            .dropDown {
+                pointer-events: all;
+                opacity: 1;
+            }
+        }
+    }
+}

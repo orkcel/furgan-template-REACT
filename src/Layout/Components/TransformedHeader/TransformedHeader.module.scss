@@ -1,0 +1,22 @@
+@import "../../../Variables/Variables.module.scss";
+.headerWrapper {
+    display: flex;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    padding: 13px 15px;
+    justify-content: space-between;
+    .navigationBlock {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+    .actionsBlock {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+}

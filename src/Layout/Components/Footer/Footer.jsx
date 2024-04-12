@@ -22,7 +22,7 @@ export const Footer = () => {
         </div>
         <div className={styles.footerBottom}>
           <div className={styles.bottomContent}>
-            <p>© Copyright 2020 <a href="#">Furgan.</a> All Rights Reserved.</p>
+            <p>© Copyright 2024 <a href="#">Furgan.</a> All Rights NOT Reserved.</p>
             <div className={styles.socialSquares}>
               {iconsData.map((icon) => {
                 return (

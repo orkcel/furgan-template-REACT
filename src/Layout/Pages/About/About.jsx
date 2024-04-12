@@ -1,32 +1,20 @@
 import styles from './About.module.scss';
-import {CaretRight, Play} from "@phosphor-icons/react";
+import {Play} from "@phosphor-icons/react";
 import SectionTitle from "../../Common/SectionTitle/SectionTitle.jsx";
 import {Footer} from "../../Components/Footer/Footer.jsx";
-import {Header} from "../../Components/Header/Header.jsx";
 import {SponsorsContainer} from "../../Common/SponsorsContainer/SponsorsContainer.jsx";
 import {RandomImages} from "../../Common/RandomImages/RandomImages.jsx";
 import employeesData from "/public/data/EmployeesData.json"
+import TopSection from "../../Common/TopSection/TopSection";
+import {TransformedHeader} from "../../Components/TransformedHeader/TransformedHeader.jsx";
+
 
 export const About = () => {
     return (
         <>
-            <Header/>
+            <TransformedHeader />
             <div className={styles.aboutWrapper}>
-                <section className={styles.topSection}>
-                    <div className={styles.topSectionContent}>
-                        <div className={styles.imageWrapper}>
-                            <img
-                                src="https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/banner-for-all2.jpg"
-                                alt="#"/>
-                        </div>
-                        <div className={styles.topSectionTitle}>
-                            <h1>About</h1>
-                            <span></span>
-                            <p><a href="#">Home</a> <CaretRight/>About</p>
-                        </div>
-                    </div>
-                </section>
-
+                <TopSection page="About"/>
                 <section className={styles.firstSection}>
                     <div className={styles.firstSectionContent}>
                         <div className={styles.container}>
@@ -63,7 +51,7 @@ export const About = () => {
                                       title="A perfect blend of creativity and technical wizardry
 The best people fomula for great websites!."/>
                         <div className={styles.cardWrapper}>
-                            {employeesData.map((partner)=>{
+                            {employeesData.map((partner) => {
                                 return (
                                     <div key={partner.id} className={styles.card}>
                                         <div className={styles.cardImage}>

@@ -18,11 +18,11 @@ const router = () => createBrowserRouter([
                 element: <Home/>,
             },
             {
-                path: 'about',
+                path: '/about',
                 element: <About />
             },
             {
-                path: 'left_side_bar',
+                path: '/left_side_bar',
                 element: <LeftSidebar />
             }
         ],

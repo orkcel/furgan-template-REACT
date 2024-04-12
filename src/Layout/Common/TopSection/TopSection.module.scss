@@ -1,0 +1,61 @@
+@import "../../../Variables/Variables.module";
+
+.topSection {
+  width: 100%;
+  display: flex;
+
+  .topSectionContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 89.1px;
+
+    .imageWrapper {
+      width: 100%;
+      height: 378px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center
+      }
+    }
+
+    .topSectionTitle {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 30px;
+
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        padding-bottom: 15px;
+      }
+
+      span {
+        width: 60px;
+        height: 2px;
+        background-color: $green-color;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        svg {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
