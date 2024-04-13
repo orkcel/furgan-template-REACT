@@ -1,0 +1,134 @@
+  [
+    {
+      "color": [
+        {
+          "id": 1,
+          "color": "Black",
+          "count": 4
+        },
+        {
+          "id": 2,
+          "color": "Blue",
+          "count": 3
+        },
+        {
+          "id": 3,
+          "color": "Green",
+          "count": 1
+        },
+        {
+          "id": 4,
+          "color": "Pink",
+          "count": 3
+        },
+        {
+          "id": 5,
+          "color": "Purple",
+          "count": 1
+        },
+        {
+          "id": 6,
+          "color": "Red",
+          "count": 5
+        },
+        {
+          "id": 7,
+          "color": "White",
+          "count": 2
+        },
+        {
+          "id": 8,
+          "color": "Yellow",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "size": [
+        {
+          "id": 1,
+          "size": "XS",
+          "count": 4
+        },
+        {
+          "id": 2,
+          "size": "S",
+          "count": 3
+        },
+        {
+          "id": 3,
+          "size": "M",
+          "count": 1
+        },
+        {
+          "id": 4,
+          "size": "L",
+          "count": 2
+        },
+        {
+          "id": 5,
+          "size": "XL",
+          "count": 4
+        },
+        {
+          "id": 6,
+          "size": "XXL",
+          "count": 3
+        },
+        {
+          "id": 7,
+          "size": "3XL",
+          "count": 1
+        },
+        {
+          "id": 8,
+          "size": "4XL",
+          "count": 10
+        }
+      ]
+    },
+    {
+      "categories": [
+        {
+          "id": 1,
+          "category": "Light",
+          "count": 2
+        },
+        {
+          "id": 2,
+          "category": "Chair",
+          "count": 5
+        },
+        {
+          "id": 3,
+          "category": "Table",
+          "count": 2
+        },
+        {
+          "id": 4,
+          "category": "Bed",
+          "count": 6
+        },
+        {
+          "id": 5,
+          "category": "New arrivals",
+          "count": 2
+        },
+        {
+          "id": 6,
+          "category": "Lamp",
+          "count": 1
+        },
+        {
+          "id": 7,
+          "category": "Specials",
+          "count": 3
+        },
+        {
+          "id": 8,
+          "category": "Sofas",
+          "count": 8
+        }
+      ]
+    }
+  ]

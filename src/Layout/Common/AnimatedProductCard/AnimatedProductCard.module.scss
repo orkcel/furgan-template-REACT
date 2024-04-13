@@ -1,0 +1,182 @@
+@import "../../../Variables/Variables.module.scss";
+
+.card {
+  max-width: 270px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+
+  .cardImage {
+    width: 100%;
+    position: relative;
+    height: 270px;
+    overflow: hidden;
+    .mark {
+      position: absolute;
+      text-transform: uppercase;
+      color: white;
+      font-size: 12px;
+      background-size: cover;
+      background-position: center;
+      text-align: start;
+      display: inline-flex;
+      align-items: center;
+      min-width: 65px;
+      height: 22px;
+      padding-left: 5px;
+
+      &.newMark {
+        left: 10px;
+        top: 40px;
+        background-image: url("../../../../public/images/flag.png");
+      }
+
+      &.saleMark {
+        left: 10px;
+        top: 10px;
+        background-image: url("../../../../public/images/flagGreen.png");
+      }
+      &.soldOut {
+        padding: 2px 8px;
+        left: 10px;
+        top: 10px;
+        width: 100%;
+        max-width: 110px;
+        background-image: url("../../../../public/images/flagGray.png");
+      }
+
+      &.newDefault {
+        top: 10px;
+      }
+    }
+
+    &:hover {
+      .optionBtn {
+        right: 10px;
+        opacity: 1;
+
+      }
+    }
+
+    .optionBtn {
+      width: 40px;
+      height: 40px;
+      color: white;
+      background-color: $green-color;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      right: -50px;
+      bottom: unset;
+      opacity: 0;
+      cursor: pointer;
+      transition: right 0.4s ease,opacity 0.3s ease, background 0.4s ease;
+      &:hover {
+        background-color: black;
+      }
+
+      &.wishListBtn {
+        bottom: 160px;
+        transition-delay: 300ms;
+
+      }
+
+      &.arrowsBtn {
+        bottom: 110px;
+        transition-delay: 200ms;
+
+
+      }
+
+      &.searchBtn {
+        bottom: 60px;
+        transition-delay: 100ms;
+
+      }
+
+      &.cartBtn {
+        bottom: 10px;
+
+      }
+
+      svg {
+        font-size: 23px;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+    }
+    .colorSelection {
+      display: flex;
+      position: absolute;
+      bottom: 15px;
+      left: 10px;
+      flex-direction: column;
+      gap: 10px;
+      .coloredCircle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        border-radius: 50%;
+        border: 1px solid gray;
+        cursor: pointer;
+        &:hover {
+          svg {
+            opacity: 1;
+          }
+        }
+
+        svg {
+          opacity: 0;
+          transition: opacity $transition;
+          font-size: 15px;
+          color: white;
+        }
+
+      }
+    }
+  }
+
+  .cardDesc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px 15px;
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 5px 0 10px;
+      cursor: pointer;
+    }
+
+    .cardDescStar {
+      font-size: 15px;
+      color: #868686;
+    }
+
+    span {
+      display: inline-flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 600;
+      color: $green-color;
+      margin-top: 7px;
+      gap: 8px;
+      p {
+        color: gray;
+        text-decoration: line-through;
+      }
+    }
+  }
+}

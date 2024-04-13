@@ -1,0 +1,173 @@
+@import "../../../Variables/Variables.module.scss";
+
+.card {
+  max-width: 270px;
+  width: 100%;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(199, 197, 197, 0.30);
+  transition: border $transition;
+
+  .mark {
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    background-size: cover;
+    background-position: center;
+    text-align: start;
+    display: inline-flex;
+    align-items: center;
+    width: 60px;
+    height: 22px;
+    padding-left: 5px;
+    z-index: 3;
+
+    &.newMark {
+      left: 10px;
+      top: 40px;
+      background-image: url("../../../../public/images/flag.png");
+    }
+
+    &.saleMark {
+      left: 10px;
+      top: 10px;
+      background-image: url("../../../../public/images/flagGreen.png");
+    }
+
+    &.newDefault {
+      top: 10px;
+    }
+  }
+
+  &:hover {
+    border-color: $green-color;
+
+    .cardOptions {
+      left: 0;
+    }
+
+    .quickView {
+      right: 10px;
+    }
+  }
+
+
+  .quickView {
+    content: "Quick View";
+    text-transform: uppercase;
+    background: #868686;
+    position: absolute;
+    top: 10px;
+    right: -100px;
+    color: white;
+    font-size: 12px;
+    padding: 5px 8px;
+    transition: right $transition, background $transition;
+    cursor: pointer;
+    z-index: 20;
+
+    &:hover {
+      background: #000 !important;
+    }
+  }
+
+  .cardOptions {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    background: rgba(128, 128, 128, 0.25);
+    padding: 10px 0;
+    border-radius: 0 15px 15px 0;
+    transition: left $transition;
+
+    .option {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      cursor: pointer;
+      transition: color $transition;
+
+      svg {
+        font-size: 20px;
+      }
+
+      &:hover {
+        color: $green-color;
+      }
+    }
+  }
+
+  .cardImage {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center
+    }
+
+  }
+
+  .cardDesc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+
+    .cardDescStar {
+      font-size: 15px;
+      color: #868686;
+
+      &.hasGoldRating {
+        color: #eebe19;
+      }
+    }
+
+    .cardDescText {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 5px 0 10px;
+        cursor: pointer;
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        color: $green-color;
+
+        p {
+          color: gray;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}

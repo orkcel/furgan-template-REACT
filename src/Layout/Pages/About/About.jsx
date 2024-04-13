@@ -8,7 +8,6 @@ import employeesData from "/public/data/EmployeesData.json"
 import TopSection from "../../Common/TopSection/TopSection";
 import {TransformedHeader} from "../../Components/TransformedHeader/TransformedHeader.jsx";
 
-
 export const About = () => {
     return (
         <>
@@ -55,6 +54,19 @@ The best people fomula for great websites!."/>
                                 return (
                                     <div key={partner.id} className={styles.card}>
                                         <div className={styles.cardImage}>
+                                            <div className={styles.mask}>
+                                            </div>
+                                            <div className={styles.icons}>
+                                                <div className={styles.icon}>
+                                                    <img src="/public/images/facebook.png" alt="Facebook"/>
+                                                </div>
+                                                <div className={styles.icon}>
+                                                    <img src="/public/images/twitter.png" alt="Twitter"/>
+                                                </div>
+                                                <div className={styles.icon}>
+                                                    <img src="/public/images/instagram.png" alt="Instagram"/>
+                                                </div>
+                                            </div>
                                             <img
                                                 src={partner.image}
                                                 alt="Patner"/>

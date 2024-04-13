@@ -4,19 +4,17 @@ import {
   RocketLaunch,
   LockKey,
   ArrowsClockwise,
-  Star,
   Chat,
-  ArrowsLeftRight,
-  ShoppingCartSimple,
-  Heart, MagnifyingGlass
 } from "@phosphor-icons/react";
 import containersData from "/public/data/containers.json";
-import {useCallback, useEffect} from "react";
+import {useCallback} from "react";
 import cardsData from "../../../../public/data/cardsData.json";
 import {Footer} from "../../Components/Footer/Footer.jsx";
 import SectionTitle from "../../Common/SectionTitle/SectionTitle.jsx";
 import {SponsorsContainer} from "../../Common/SponsorsContainer/SponsorsContainer.jsx";
 import {RandomImages} from "../../Common/RandomImages/RandomImages.jsx";
+import {ProductCard} from "../../Common/ProductCard/ProductCard.jsx";
+import {AnimatedProductCard} from "../../Common/AnimatedProductCard/AnimatedProductCard.jsx";
 
 
 export const Home = () => {
@@ -132,63 +130,7 @@ export const Home = () => {
             <div className={styles.cardWrapper}>
               {cardsData.slice(0, 8).map((card) => {
                 return (
-                    <div key={card.id} className={styles.card}>
-                      {
-                        card.new ?
-                            <div
-                                className={`${styles.mark} ${styles.newMark} ${card.regularPrice === null ? styles.newDefault : ""}`}>
-                              new
-                            </div>
-                            :
-                            null
-                      }
-                      {
-                        card.regularPrice !== null ?
-
-                            <div className={`${styles.mark} ${styles.saleMark}`}>
-                              {(((card.regularPrice - card.salePrice) / card.regularPrice) * 100).toFixed(2) + "%"}
-                            </div>
-                            :
-                            null
-                      }
-                      <div className={styles.quickView}>
-                        quick view
-                      </div>
-                      <div className={styles.cardOptions}>
-                        <div className={styles.option}>
-                          <Heart/>
-                        </div>
-                        <div className={styles.option}>
-                          <ShoppingCartSimple/>
-
-                        </div>
-                        <div className={styles.option}>
-                          <ArrowsLeftRight/>
-                        </div>
-
-                      </div>
-
-                      <div className={styles.cardImage}>
-                        <img
-                            src={card.image}
-                            alt="Product Image"
-                        />
-                      </div>
-                      <div className={styles.cardDesc}>
-                        <div className={`${styles.cardDescStar} ${card.goldRating ? styles.hasGoldRating : ""}`}>
-                          <Star/>
-                          <Star/>
-                          <Star/>
-                          <Star/>
-                          <Star/>
-                        </div>
-                        <div className={styles.cardDescText}>
-                          <h3><a href="#">{card.name}</a></h3>
-                          <span><p>{card.regularPrice ? "$" + card.regularPrice.toFixed(2) : null} </p>${card.salePrice?.toFixed(2)}</span>
-                        </div>
-                      </div>
-                    </div>
-
+                    <ProductCard key={card.id} card={card} />
                 )
               })}
             </div>
@@ -225,47 +167,7 @@ export const Home = () => {
             <div className={styles.cardWrapper}>
               {cardsData.slice(8, 12).map((product) => {
                 return (
-                    <div key={product.id} className={styles.card}>
-                      <div className={styles.cardImage}>
-                        <div className={`${styles.optionBtn} ${styles.wishListBtn}`}>
-                          <Heart/>
-                        </div>
-                        <div className={`${styles.optionBtn} ${styles.arrowsBtn}`}>
-                          <ArrowsLeftRight/>
-                        </div>
-                        <div className={`${styles.optionBtn} ${styles.searchBtn}`}>
-                          <MagnifyingGlass/>
-                        </div>
-                        <div className={`${styles.optionBtn} ${styles.cartBtn}`}>
-                          <ShoppingCartSimple/>
-                        </div>
-
-                        {
-                          product.new ?
-                              <div
-                                  className={`${styles.mark} ${styles.newMark} ${product.regularPrice === null ? styles.newDefault : ""}`}>
-                                new
-                              </div>
-                              :
-                              null
-                        }
-
-                        <img src={product.image}
-                             alt="Product Image"/>
-                      </div>
-                      <div className={styles.cardDesc}>
-                        <h3><a href="#">{product.name}</a></h3>
-                        <div className={styles.cardDescStar}>
-                          <Star/>
-                          <Star/>
-                          <Star/>
-                          <Star/>
-                          <Star/>
-                        </div>
-                        <span>${product.salePrice?.toFixed(2)}</span>
-                      </div>
-
-                    </div>
+                    <AnimatedProductCard key={product.id} product={product}/>
                 )
               })}
             </div>

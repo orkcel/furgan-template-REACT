@@ -1,27 +1,62 @@
 [
   {
     "id": 1,
+    "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro161-1-600x778.jpg",
+    "name": "Moss Sofa",
+    "salePrice": 45,
+    "regularPrice": 54,
+    "goldRating": true,
+    "new": false,
+    "quantity": 13,
+    "colorOptions": [
+      {
+        "id": 1,
+        "color": "blue"
+      },
+      {
+        "id": 2,
+        "color": "green"
+      },
+      {
+        "id": 3,
+        "color": "purple"
+      }
+    ]
+
+  },
+  {
+    "id": 2,
     "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro61-1-270x350.jpg",
     "name": "Swepper Funnel",
     "salePrice": 79,
     "regularPrice": 139,
     "goldRating": false,
     "new": true,
-    "quantity": 32
+    "quantity": 0
   },
   {
-    "id": 2,
+    "id": 3,
     "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro151-1-270x350.jpg",
     "name": "Office Chair",
     "salePrice": 79,
     "regularPrice": 89,
     "goldRating": false,
     "new": true,
-    "quantity": 12
+    "quantity": 5,
+    "colorOptions": [
+      {
+        "id": 1,
+        "color": "#9cc25d"
+      },
+      {
+        "id": 2,
+        "color": "darkred"
+      }
+    ]
 
   },
   {
-    "id": 3,
+    "id": 4,
     "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro101-1-270x350.jpg",
     "name": "Tulip Chair",
     "salePrice": 60,
@@ -29,10 +64,9 @@
     "goldRating": false,
     "new": true,
     "quantity": 15
-
   },
   {
-    "id": 4,
+    "id": 5,
     "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro1113-270x350.jpg",
     "name": "Alarm Clock",
     "salePrice": 129,
@@ -43,18 +77,18 @@
 
   },
   {
-    "id": 5,
+    "id": 6,
     "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro141-1-270x350.jpg",
     "name": "Chair AAC",
     "salePrice": 207,
     "regularPrice": null,
     "goldRating": true,
     "new": true,
-    "quantity": 31
+    "quantity": 0
 
   },
   {
-    "id": 6,
+    "id": 7,
     "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro71-1-270x350.jpg",
     "name": "Mass Sofa",
     "salePrice": 89,
@@ -65,7 +99,7 @@
 
   },
   {
-    "id": 7,
+    "id": 8,
     "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro91-1-270x350.jpg",
     "name": "DAX ArmChair",
     "salePrice": 89,
@@ -76,7 +110,7 @@
 
   },
   {
-    "id": 8,
+    "id": 9,
     "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro1211-2-270x350.jpg",
     "name": "Prix Chair",
     "salePrice": 119,
@@ -87,7 +121,7 @@
 
   },
   {
-    "id": 9,
+    "id": 10,
     "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro13-1-270x350.jpg",
     "name": "Woody table",
     "salePrice": 60,
@@ -97,7 +131,7 @@
     "quantity": 66
   },
   {
-    "id": 10,
+    "id": 11,
     "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro302-270x350.jpg",
     "name": "Lynn Storege",
     "salePrice": 79,
@@ -107,9 +141,9 @@
     "quantity": 26
   },
   {
-    "id": 11,
+    "id": 12,
     "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro31-1-270x350.jpg",
-    "name": "Lynn Storege",
+    "name": "Knit Lamp",
     "salePrice": 79,
     "regularPrice": null,
     "goldRating": true,
@@ -117,7 +151,7 @@
     "quantity": 16
   },
   {
-    "id": 12,
+    "id": 13,
     "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro41-1-270x350.jpg",
     "name": "Round Basket",
     "salePrice": 60,
@@ -125,5 +159,41 @@
     "goldRating": true,
     "new": true,
     "quantity": 15
+  },
+  {
+    "id": 14,
+    "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro191-1-600x778.jpg",
+    "name": "Table Lamp",
+    "salePrice": 35,
+    "regularPrice": null,
+    "goldRating": false,
+    "new": true,
+    "quantity": 0,
+    "colorOptions": [
+      {
+        "id": 1,
+        "color": "black"
+      },
+      {
+        "id": 2,
+        "color": "beige"
+      },
+      {
+        "id": 3,
+        "color": "orange"
+
+      }
+    ]
+
+  },
+  {
+    "id": 15,
+    "image": "https://dreamingtheme.kiendaotac.com/html/furgan/assets/images/apro51012-1-270x350.jpg",
+    "name": "Long Sofa",
+    "salePrice": 99,
+    "regularPrice": 125,
+    "goldRating": false,
+    "new": false,
+    "quantity": 25
   }
 ]
