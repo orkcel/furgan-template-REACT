@@ -1,5 +1,6 @@
 import styles from "./TopSection.module.scss"
 import {CaretRight} from "@phosphor-icons/react";
+import {Link} from "react-router-dom";
 
 const TopSection = ({page}) => {
     return (
@@ -11,9 +12,11 @@ const TopSection = ({page}) => {
                         alt="#"/>
                 </div>
                 <div className={styles.topSectionTitle}>
-                    <h1>{page}</h1>
+                    <h1>
+                        {page}
+                    </h1>
                     <span></span>
-                    <p><a href="#">Home</a> <CaretRight/>{page}</p>
+                    <p><Link to="/">Home</Link> <CaretRight/>{page}</p>
                 </div>
             </div>
         </section>

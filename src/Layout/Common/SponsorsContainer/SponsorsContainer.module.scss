@@ -32,3 +32,14 @@
     }
   }
 }
+@media screen and (max-width:  1250px) {
+  .sponsorsContainer {
+    .sponsorsContent {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 50px 15px;
+      gap: 35px;
+
+    }
+  }
+}

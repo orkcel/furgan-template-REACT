@@ -20,3 +20,19 @@
         gap: 25px;
     }
 }
+
+@media screen and (max-width: 1128px) {
+    .headerWrapper {
+        .navigationBlock {
+            .navigation {
+                display:none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    .headerWrapper {
+        gap: 10px;
+
+    }
+}

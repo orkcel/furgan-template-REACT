@@ -16,7 +16,9 @@ export const TransformedHeader = () => {
         <header className={styles.headerWrapper}>
             <div className={styles.navigationBlock}>
                 <HeaderLogo/>
+                <div className={styles.navigation}>
                 <HeaderNavigation dropDownPosition={dropDownPosition}/>
+                </div>
             </div>
             <div className={styles.actionsBlock}>
                 <HeaderOptions />

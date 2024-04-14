@@ -15,6 +15,8 @@ import {SponsorsContainer} from "../../Common/SponsorsContainer/SponsorsContaine
 import {RandomImages} from "../../Common/RandomImages/RandomImages.jsx";
 import {ProductCard} from "../../Common/ProductCard/ProductCard.jsx";
 import {AnimatedProductCard} from "../../Common/AnimatedProductCard/AnimatedProductCard.jsx";
+import {MobileButtons} from "../../Common/MobileButtons/MobileButtons.jsx";
+import {ControlButtons} from "../../Common/ControlButtons/ControlButtons.jsx";
 
 
 export const Home = () => {
@@ -53,12 +55,7 @@ export const Home = () => {
                 <p>SHOP NOW</p>
               </div>
             </div>
-            <div className={styles.controlBtnWrapper}>
-              <div className={styles.controlBtnActive}></div>
-              <div className={styles.controlBtn}></div>
-              <div className={styles.controlBtn}></div>
-
-            </div>
+            <ControlButtons/>
           </div>
         </section>
 
@@ -134,12 +131,7 @@ export const Home = () => {
                 )
               })}
             </div>
-            <div className={styles.controlBtnWrapper}>
-              <div className={styles.controlBtnActive}></div>
-              <div className={styles.controlBtn}></div>
-              <div className={styles.controlBtn}></div>
-
-            </div>
+            <ControlButtons/>
             <div className={styles.bannerContainer}>
               <div className={styles.bannerContent}>
                 <div className={styles.bannerText}>
@@ -171,12 +163,7 @@ export const Home = () => {
                 )
               })}
             </div>
-            <div className={styles.controlBtnWrapper}>
-              <div className={styles.controlBtnActive}></div>
-              <div className={styles.controlBtn}></div>
-              <div className={styles.controlBtn}></div>
-
-            </div>
+            <ControlButtons/>
 
             <div className={styles.bannerContainer}>
 
@@ -286,12 +273,7 @@ export const Home = () => {
                 </div>
               </div>
             </div>
-            <div className={styles.controlBtnWrapper}>
-              <div className={styles.controlBtnActive}></div>
-              <div className={styles.controlBtn}></div>
-              <div className={styles.controlBtn}></div>
-
-            </div>
+            <ControlButtons/>
 
           </div>
         </section>
@@ -303,6 +285,8 @@ export const Home = () => {
         </section>
       </main>
       <Footer/>
+      <MobileButtons/>
+
     </>
   );
 };

@@ -35,37 +35,6 @@
   }
 }
 
-.controlBtnWrapper {
-  bottom: 50px;
-  left: 50%;
-  display: flex;
-  gap: 10px;
-  margin-bottom: 50px;
-
-  .controlBtnActive {
-    width: 30px;
-    height: 10.5px;
-    background-color: $green-color;
-    border-radius: 25px;
-
-    &:focus {
-      border: 2px solid black;
-    }
-  }
-
-  .controlBtn {
-    width: 10.5px;
-    height: 10.5px;
-    background-color: #b2b2b2;
-    border-radius: 25px;
-
-    &:hover {
-      background-color: $green-color;
-    }
-
-  }
-}
-
 .homeWrapper {
   display: flex;
   width: 100vw;
@@ -81,6 +50,7 @@
       flex-direction: column;
       align-items: center;
       position: relative;
+
 
       .sectionBackground {
         width: 100%;
@@ -126,13 +96,14 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    padding: 80px 30px;
+    padding: 80px 0;
 
     .sectionContent {
       display: flex;
       width: 100%;
       max-width: 1200px;
       flex-direction: column;
+      padding: 0 15px;
 
       .containersWrapper {
         display: flex;
@@ -214,6 +185,7 @@
       .productWrapper {
         width: 100%;
         display: flex;
+        justify-content: center;
 
         .productContent {
           max-width: 1200px;
@@ -301,7 +273,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         row-gap: 25px;
-        padding: 0 0 50px 0;
+        padding: 0 0 0 0;
       }
 
       .bannerContainer {
@@ -428,7 +400,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         row-gap: 25px;
-        padding: 0 15px 50px;
+        padding: 0 15px 0;
 
       }
 
@@ -522,7 +494,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-bottom: 25px;
+
 
     .fourthSectionContent {
       width: 100%;
@@ -568,8 +540,8 @@
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        padding: 50px 0;
+        justify-content: space-between;
+        padding: 50px 15px 0;
 
         .card {
           max-width: 370px;
@@ -687,9 +659,377 @@
     flex-direction: column;
     align-items: center;
     background-color: #f4f4f4;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .homeWrapper {
+    .homeSection {
+      .homeSectionContent {
+        .sectionBackground {
+          height: 650px;
+        }
+
+        .homeSectionText {
+          right: 50px;
+        }
+      }
+    }
+
+    .firstSection {
+      .sectionContent {
+        .productWrapper {
+          .productContent {
+            flex-direction: column;
+            gap: 25px;
+
+            .contentContainer {
+              max-width: 100%;
+
+              .imageBlock {
+                display: flex;
+                width: 100%;
+
+                img {
+                  width: 100%;
+                  object-fit: cover;
+                  object-position: center;
+                  max-height: 920px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .secondSection {
+      .secondSectionContent {
+        padding: 0 30px;
+
+        .cardWrapper {
+          justify-content: center;
+
+          row-gap: unset;
+          gap: 15px;
+        }
+
+        .bannerContainer {
+          padding: 190px 30px;
+        }
+      }
+    }
+
+    .thirdSection {
+      .thirdSectionContent {
+        .cardWrapper {
+          row-gap: unset;
+          gap: 25px;
+          padding: 0 30px;
+          justify-content: center;
+        }
+
+        .bannerContainer {
+          padding: 90px 0;
+        }
+      }
+    }
+    .fourthSection {
+      .fourthSectionContent {
+        .cardWrapper {
+          flex-wrap: wrap;
+          padding: 15px;
+          gap: 25px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1128px) {
+  .homeWrapper {
+    .firstSection {
+      .sectionContent {
+        .containersWrapper {
+          flex-wrap: wrap;
+          justify-content: center;
+
+          .container {
+            padding: 15px;
+          }
+        }
+      }
+    }
+
+    .secondSection {
+      padding-bottom: 0;
+    }
+
+    .thirdSection {
+      .thirdSectionContent {
+        .bannerContainer {
+          padding: 15px 0;
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 889px) {
+  .homeWrapper {
+    .firstSection {
+      padding: 40px 0;
+
+      .sectionContent {
+        .containersWrapper {
+          .container {
+            padding: 15px;
+            max-width: unset;
+          }
+        }
+      }
+    }
+
+    .secondSection {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .secondSectionContent {
+        padding: 0 15px;
+
+        .bannerContainer {
+          padding: 130px 30px;
+        }
+
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .defaultButton {
+    max-width: 120px;
+    white-space: nowrap;
+    padding: 12px 15px;
+  }
+  .homeWrapper {
+    .homeSection {
+      .homeSectionContent {
+        .sectionBackground {
+          height: 450px;
+        }
+
+        .homeSectionText {
+          right: 70px;
+
+          h1 {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+
+    .thirdSection {
+      padding: 35px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .homeWrapper {
+    .homeSection {
+      .homeSectionContent {
+        .sectionBackground {
+          height: 375px;
+        }
+
+        .homeSectionText {
+          right: 15px;
+
+          h1 {
+            font-size: 32px;
+          }
+        }
+      }
+    }
+
+    .firstSection {
+      .sectionContent {
+        .productWrapper {
+          .productContent {
+            .contentContainer {
+              .imageBlock {
+                .decor {
+                  max-width: 120px;
+                  font-size: 12px;
+                  padding: 5px 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .secondSection {
+      .secondSectionContent {
+        .bannerContainer {
+          padding: 80px 30px;
+
+          .bannerContent {
+            .bannerText {
+              max-width: 250px;
+
+              .greenText {
+                p {
+                  font-size: 15px;
+                }
+
+                h3 {
+                  font-size: 32px;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    .thirdSection {
+      .thirdSectionContent {
+        .bannerContainer {
+          .bannerText {
+            padding: 0 15px;
+            .greenText {
+              h3 {
+                font-size: 24px;
+              }
+            }
+            .regularText {
+              h4 {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .fourthSection {
+      .fourthSectionContent {
+        .cardWrapper {
+       .card {
+         .cardImage {
+           height: 220px;
+         }
+       }
+        }
+      }
+    }
+
 
 
   }
+}
+
+@media screen and (max-width: 469px) {
+  .homeWrapper {
+    .firstSection {
+      .sectionContent {
+        .containersWrapper {
+          .container {
+            .containerInner {
+              padding: 25px 10px;
+              gap: 25px;
+              height: auto;
+              flex-direction: column;
+              align-items: center;
+
+              .containerTitle {
+                align-items: center;
+
+                p {
+                  text-align: center;
+                }
+              }
 
 
+            }
+          }
+        }
+
+        .productWrapper {
+          .productContent {
+            .contentContainer {
+              .imageBlock {
+                .decor {
+                  max-width: 90px;
+                  font-size: 10px;
+                  height: 30px;
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    .homeSection {
+      .homeSectionContent {
+        .sectionBackground {
+          img {
+            object-position: 27% 100%;
+
+          }
+        }
+
+        .homeSectionText {
+          right: 30px;
+
+          h1 {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
+    .secondSection {
+      .secondSectionContent {
+        .bannerContainer {
+          padding: 40px 15px;
+          background-position: 62% 100%;
+
+          .bannerContent {
+            .bannerText {
+              .greenText {
+                p {
+                  font-size: 13px;
+                  max-width: 150px;
+                  white-space: nowrap;
+                }
+
+                h3 {
+                  font-size: 24px;
+
+                  span {
+                    left: -10px;
+                  }
+                }
+              }
+
+              .regularText {
+                max-width: 150px;
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+  }
 }

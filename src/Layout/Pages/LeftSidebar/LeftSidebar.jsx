@@ -11,6 +11,7 @@ import RangeSlider from "react-range-slider-input";
 import "react-range-slider-input/dist/style.css";
 import cardsData from "/public/data/cardsData.json";
 import {AnimatedProductCard} from "../../Common/AnimatedProductCard/AnimatedProductCard.jsx";
+import {MobileButtons} from "../../Common/MobileButtons/MobileButtons.jsx";
 
 
 export const LeftSidebar = () => {
@@ -203,6 +204,7 @@ export const LeftSidebar = () => {
                 </section>
             </main>
             <Footer/>
+            <MobileButtons/>
 
         </>
     )

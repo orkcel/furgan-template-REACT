@@ -58,31 +58,26 @@ export const HeaderNavigation = ({dropDownPosition}) => {
                 <Link to="#">SHOP</Link>
                 <div className={`${styles.dropDown} ${styles.shopDropDown}`}>
                     <div className={styles.shopDropdownColumn}>
-                        <div className={styles.dropdownItem}></div>
                         <h3><span></span>SHOP LAYOUTS</h3>
                         <a href="#">Shop Grid</a>
-                        <a href="#">Shop List</a>
+                        <a href="#" className={`${styles.mark} ${styles.new}`}>Shop List</a>
                         <a href="#">No Sidebar</a>
                         <Link to="/left_side_bar">Left Sidebar</Link>
                         <a href="#">Right Sidebar</a>
-
-                        <div className={styles.dropdownItem}></div>
-                        <h3><span></span>PRODUCT LAYOUTS</h3>
+                        <h3 className={styles.bottomHeading}><span></span>PRODUCT LAYOUTS</h3>
                         <a href="#">Vertical Thumbnails</a>
-                        <a href="#">Extra Sidebar</a>
+                        <a href="#" className={`${styles.mark} ${styles.new}`}>Extra Sidebar</a>
                         <a href="#">Right Sidebar</a>
                         <a href="#">Left Sidebar</a>
                     </div>
 
                     <div className={styles.shopDropdownColumn}>
-                        <div className={styles.dropdownItem}></div>
                         <h3><span></span>PRODUCT EXTENDS</h3>
-                        <a href="#">Product Bundle</a>
-                        <a href="#">Product 360 Deg</a>
+                        <a href="#" className={`${styles.mark} ${styles.new}`}>Product Bundle</a>
+                        <a href="#" className={`${styles.mark} ${styles.hot}`}>Product 360 Deg</a>
                         <a href="#">Video</a>
-
                         <div className={styles.dropdownItem}></div>
-                        <h3><span></span>OTHER PAGES</h3>
+                        <h3 className={styles.bottomHeading}><span></span>OTHER PAGES</h3>
                         <a href="#">Cart</a>
                         <a href="#">Wishlist</a>
                         <a href="#">Checkout</a>
@@ -91,25 +86,20 @@ export const HeaderNavigation = ({dropDownPosition}) => {
                     </div>
 
                     <div className={styles.shopDropdownColumn}>
-                        <div className={styles.dropdownItem}></div>
                         <h3><span></span>PRODUCT TYPES</h3>
                         <a href="#">Single</a>
-                        <a href="#">Variable</a>
+                        <a href="#" className={`${styles.mark} ${styles.hot}`}>Variable</a>
                         <a href="#">External / Affiliate</a>
                         <a href="#">Grouped</a>
                         <a href="#">Out Of Stack</a>
                         <a href="#">Om Sale</a>
-
                     </div>
-
-
                 </div>
             </div>
             <div className={styles.navItem}>
                 <a href="#">ELEMENTS</a>
                 <div className={`${styles.dropDown} ${styles.elementsDropDown}`}>
                     <div className={styles.elementsDropdownColumn}>
-                        <div className={styles.dropdownItem}></div>
                         <h3><span></span>ELEMENT 1</h3>
                         <a href="#">Banner</a>
                         <a href="#">Blog Element</a>
@@ -118,7 +108,6 @@ export const HeaderNavigation = ({dropDownPosition}) => {
                     </div>
 
                     <div className={styles.elementsDropdownColumn}>
-                        <div className={styles.dropdownItem}></div>
                         <h3><span></span>ELEMENT 2</h3>
                         <a href="#">Client</a>
                         <a href="#">Product Layout</a>
@@ -128,16 +117,11 @@ export const HeaderNavigation = ({dropDownPosition}) => {
                     </div>
 
                     <div className={styles.elementsDropdownColumn}>
-                        <div className={styles.dropdownItem}></div>
                         <h3><span></span>ELEMENT 3</h3>
                         <a href="#">Instagram Feed</a>
                         <a href="#">Newsletter</a>
                         <a href="#">Testimonials</a>
-
-
                     </div>
-
-
                 </div>
 
             </div>
@@ -145,7 +129,6 @@ export const HeaderNavigation = ({dropDownPosition}) => {
                 <a href="#">BLOG</a>
                 <div className={`${styles.dropDown} ${styles.blogDropDown}`}>
                     <div className={styles.blogDropdownColumn}>
-                        <div className={styles.dropdownItem}></div>
                         <h3><span></span>BLOG LAYOUT</h3>
                         <a href="#">No Sidebar</a>
                         <Link to="left_side_bar">Left Sidebar</Link>
@@ -155,31 +138,20 @@ export const HeaderNavigation = ({dropDownPosition}) => {
                     </div>
 
                     <div className={styles.blogDropdownColumn}>
-                        <div className={styles.dropdownItem}></div>
                         <h3><span></span>POST LAYOUT</h3>
                         <a href="#">No Sidebar</a>
                         <a href="#">Left Sidebar</a>
                         <a href="#">Right Sidebar</a>
                         <a href="#">Instagram In Post</a>
                         <a href="#">Product In Post</a>
-
-                        <div className={styles.dropdownItem}></div>
-                        <h3><span></span>POST FORMAT</h3>
-                        <a href="#">Standart</a>
+                        <h3 className={styles.bottomHeading}><span></span>POST FORMAT</h3>
+                        <a href="#">Standard</a>
                         <a href="#">Gallery</a>
                         <a href="#">Video</a>
                     </div>
-
-                    <div className={styles.blogDropdownColumn}>
-                        <div className={styles.dropdownItem}></div>
                         <div className={styles.imageWrapper}>
                             <img src="../../../../public/images/blogLamps.png" alt="#"/>
                         </div>
-
-
-                    </div>
-
-
                 </div>
             </div>
             <div className={styles.navItem}>

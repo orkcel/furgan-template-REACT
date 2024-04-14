@@ -61,3 +61,24 @@
     }
   }
 }
+
+@media screen and (max-width:  1440px) {
+  .randomImgContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (max-width:  679px) {
+  .randomImgContainer {
+    .randomImg {
+      max-width: unset;
+    }
+  }
+}
+@media screen and (max-width:  400px) {
+  .randomImgContainer {
+    .randomImg {
+      height: 260px;
+    }
+  }
+}

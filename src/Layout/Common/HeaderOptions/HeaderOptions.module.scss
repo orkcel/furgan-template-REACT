@@ -4,7 +4,17 @@
     width: 100%;
     display: flex;
     font-weight: 800;
-    gap: 30px;
+    gap: 15px;
+  .menu {
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+    svg {
+      font-size: 32px;
+    }
+  }
   &.dropShadow {
     .drop {
       padding-bottom: 0;
@@ -18,7 +28,10 @@
 
     .drop {
       position: relative;
-      padding-bottom: 10px;
+      padding: 10px 0;
+      &:nth-child(4) {
+        margin-left: 10px;
+      }
       a {
         display: inline-flex;
         align-items: center;
@@ -48,3 +61,18 @@
       }
     }
   }
+@media screen and (max-width: 1128px) {
+  .headerOptions {
+    .menu{
+      display: flex;
+    }
+  }
+}
+@media screen and (max-width: 844px) {
+  .headerOptions {
+    max-width: 100px;
+ .drop {
+   display: none;
+ }
+  }
+}

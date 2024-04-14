@@ -1,13 +1,13 @@
 @import "../../../Variables/Variables.module.scss";
 
 .headerWrapper {
-  display: flex;
-  width: 100vw;
-  justify-content: center;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 100;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
 
   &.headerActive {
     background-color: white;
@@ -56,6 +56,40 @@
   }
 }
 
-@media (max-width: 1250px) {
-
+@media screen and (max-width: 1128px) {
+.headerWrapper {
+  .headerContent {
+    .headerControl {
+      max-width: 140px;
+    }
+    .headerMidSide {
+      .navigationContainer {
+        display: none;
+      }
+    }
+  }
+}
+}
+@media screen and (max-width: 844px) {
+  .headerWrapper {
+    .headerContent {
+      align-items: center;
+      .headerMidSide {
+        .navigationContainer {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .headerWrapper {
+    .headerContent {
+      gap: 10px;
+      .headerControl {
+        padding-right: 0;
+        max-width: 75px;
+      }
+    }
+  }
 }

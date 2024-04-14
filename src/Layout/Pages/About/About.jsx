@@ -7,7 +7,8 @@ import {RandomImages} from "../../Common/RandomImages/RandomImages.jsx";
 import employeesData from "/public/data/EmployeesData.json"
 import TopSection from "../../Common/TopSection/TopSection";
 import {TransformedHeader} from "../../Components/TransformedHeader/TransformedHeader.jsx";
-
+import {MobileButtons} from "../../Common/MobileButtons/MobileButtons.jsx";
+import {ControlButtons} from "../../Common/ControlButtons/ControlButtons.jsx";
 export const About = () => {
     return (
         <>
@@ -81,12 +82,7 @@ The best people fomula for great websites!."/>
                             })}
 
                         </div>
-                        <div className={styles.controlBtnWrapper}>
-                            <div className={styles.controlBtnActive}></div>
-                            <div className={styles.controlBtn}></div>
-                            <div className={styles.controlBtn}></div>
-
-                        </div>
+                        <ControlButtons/>
                     </div>
 
                 </section>
@@ -98,6 +94,7 @@ The best people fomula for great websites!."/>
                     <RandomImages/>
                 </section>
                 <Footer/>
+                <MobileButtons/>
             </div>
         </>
     )
