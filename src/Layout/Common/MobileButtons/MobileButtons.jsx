@@ -6,21 +6,21 @@ export const MobileButtons= () => {
         <section className={styles.footerMobile}>
             <div className={styles.mobileButtons}>
                 <div className={styles.button}>
-                    <HouseLine weight="fill"/>
-                    <p>Home</p>
+                    <a href="/"> <HouseLine weight="fill"/>
+                    <p>Home</p></a>
 
                 </div>
                 <div className={styles.button}>
-                    <Heart weight="fill"/>
-                    <p>Wishlist</p>
+                    <a href="*"><Heart weight="fill"/>
+                        <p>Wishlist</p></a>
                 </div>
                 <div className={styles.button}>
-                    <Basket weight="fill"/>
-                    <p>Cart</p>
+                    <a href="/left_side_bar"><Basket weight="fill"/>
+                        <p>Cart</p></a>
                 </div>
                 <div className={styles.button}>
-                    <User weight="fill"/>
-                    <p>Account</p>
+                    <a href="*"><User weight="fill"/>
+                        <p>Account</p></a>
                 </div>
             </div>
         </section>

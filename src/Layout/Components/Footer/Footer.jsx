@@ -1,6 +1,6 @@
 import styles from './Footer.module.scss'
 import iconsData from "/public/data/socialIcons.json";
-import {MobileButtons} from "../../Common/MobileButtons/MobileButtons.jsx";
+
 
 
 

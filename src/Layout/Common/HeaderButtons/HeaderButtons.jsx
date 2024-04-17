@@ -28,12 +28,12 @@ export const HeaderButtons = () => {
             <div className={styles.btn}>
                 <a href="#"><User/></a>
                 <div className={styles.userDropDown}>
-                    <a href="#">Dashboard</a>
-                    <a href="#">Orders</a>
-                    <a href="#">Downloads</a>
-                    <a href="#">Address</a>
-                    <a href="#">Account Details</a>
-                    <a href="#">Logout</a>
+                    <a href="/">Dashboard</a>
+                    <a href="/left_side_bar">Orders</a>
+                    <a href="/">Downloads</a>
+                    <a href="/">Address</a>
+                    <a href="/">Account Details</a>
+                    <a href="/">Logout</a>
 
                 </div>
             </div>

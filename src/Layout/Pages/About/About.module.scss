@@ -1,37 +1,6 @@
 @import "../../../Variables/Variables.module.scss";
 @import "../../../Animations/Animations.module";
 
-.controlBtnWrapper {
-
-  left: 50%;
-  display: flex;
-  gap: 10px;
-  margin-top: 50px;
-
-  .controlBtnActive {
-    width: 30px;
-    height: 10.5px;
-    background-color: $green-color;
-    border-radius: 25px;
-
-    &:focus {
-      border: 2px solid black;
-    }
-  }
-
-  .controlBtn {
-    width: 10.5px;
-    height: 10.5px;
-    background-color: #b2b2b2;
-    border-radius: 25px;
-
-    &:hover {
-      background-color: $green-color;
-    }
-
-  }
-}
-
 .aboutWrapper {
   display: flex;
   width: 100vw;
@@ -379,12 +348,14 @@
 @media screen and (max-width: 500px) {
   .aboutWrapper {
     .firstSection {
-      padding: 0;
+      padding-top: 30px;
       .firstSectionContent {
         .container {
           .imageWrapper {
+
+            width: 100%;
             img {
-              object-fit: contain;
+              object-fit: cover;
             }
           }
           flex-direction: column;

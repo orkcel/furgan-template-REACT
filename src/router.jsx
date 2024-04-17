@@ -3,6 +3,7 @@ import {About} from "./Layout/Pages/About/About.jsx";
 import {LeftSidebar} from "./Layout/Pages/LeftSidebar/LeftSidebar.jsx";
 import {MainLayout} from "./Layout/Pages/MainLayout.jsx";
 import {Home} from "./Layout/Pages/Home/Home.jsx";
+import {PageNotFound} from "./Layout/Pages/PageNotFound/PageNotFound.jsx";
 
 const router = () => createBrowserRouter([
     {
@@ -24,6 +25,10 @@ const router = () => createBrowserRouter([
             {
                 path: '/left_side_bar',
                 element: <LeftSidebar />
+            },
+            {
+                path: '*',
+                element: <PageNotFound/>
             }
         ],
     },

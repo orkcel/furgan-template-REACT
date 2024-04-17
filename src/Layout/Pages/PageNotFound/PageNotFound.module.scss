@@ -1,0 +1,185 @@
+@import "../../../Variables/Variables.module.scss";
+
+
+.pageNotFoundSection {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+
+  .notFoundContent {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 15px;
+
+
+    .imageBlock {
+      max-width: 630px;
+      width: 100%;
+      height: 400px;
+
+      img  {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+    }
+
+    .notFoundText {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      h1 {
+        font-size: 150px;
+        font-weight: 600;
+        color: $green-color;
+      }
+
+      h3 {
+        font-size: 32px;
+        font-weight: 500;
+        padding-bottom: 15px;
+      }
+
+      p {
+        font-size: 24px;
+        color: #868686;
+
+      }
+
+      .defaultButton {
+        max-width: 170px;
+        width: 100%;
+        max-height: 70px;
+        height: 100%;
+        border: 1px solid #000;
+        background-color: white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 30px;
+        transition: background 0.2s ease;
+        margin-top: 10px;
+
+        a {
+          color: #000;
+          font-weight: 1000;
+          font-size: 14px;
+          text-transform: uppercase;
+          z-index: 1;
+          transition: color 0.2s ease;
+        }
+
+        &:hover {
+          background-color: #000;
+
+          a {
+            color: white;
+          }
+        }
+      }
+
+
+    }
+  }
+
+}
+
+@media screen and (max-width: 1130px) {
+  .pageNotFoundSection {
+    .notFoundContent {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+  }
+}
+
+@media screen and (max-width: 907px) {
+  .pageNotFoundSection {
+    .notFoundContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .imageBlock {
+        max-width: 460px;
+        width: 100%;
+        height: 300px;
+      }
+      .notFoundText {
+        h1 {
+          font-size: 100px;
+          font-weight: 600;
+
+        }
+        h3 {
+          font-size: 24px;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+    }
+
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pageNotFoundSection {
+    .notFoundContent {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .imageBlock {
+        max-width: 200px;
+        width: 100%;
+        height: 130px;
+      }
+      .notFoundText {
+        h1 {
+          font-size: 70px;
+          font-weight: 600;
+
+        }
+        h3 {
+          font-size: 18px;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        .defaultButton {
+          padding: 12px 10px;
+
+          a {
+            font-size: 13px;
+          }
+        }
+      }
+
+    }
+
+  }
+}

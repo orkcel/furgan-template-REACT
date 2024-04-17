@@ -1,0 +1,83 @@
+@import "../../../Variables/Variables.module.scss";
+
+.mobMenu {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.300);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+  height: 100vh;
+  transform: scaleX(0);
+  transition: transform $transition;
+  pointer-events: none;
+  transform-origin: left;
+
+
+  &.menuActive {
+    pointer-events: auto;
+  transform: scaleX(1);
+  }
+
+  .top {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
+    align-items: center;
+
+    .closeMenu {
+      height: 50px;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 1px solid rgba(128, 128, 128, 0.200);
+      cursor: pointer;
+
+      svg {
+        font-size: 22px;
+      }
+    }
+  }
+
+  > a {
+    padding: 18px 20px;
+    border: 1px solid rgba(128, 128, 128, 0.100);
+    position: relative;
+    font-weight: 400;
+    text-transform: unset;
+    font-size: 18px;
+    svg {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      color: black;
+    }
+  }
+
+  h4 {
+    padding: 10px 0;
+  }
+
+  .mobDropDown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 100px 20px 10px;
+    left: 0;
+    top: 55px;
+    transition: opacity $transition;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+  }
+
+}
