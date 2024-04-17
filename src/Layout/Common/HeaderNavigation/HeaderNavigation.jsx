@@ -150,7 +150,7 @@ export const HeaderNavigation = ({dropDownPosition}) => {
                         <a href="*">Video</a>
                     </div>
                         <div className={styles.imageWrapper}>
-                            <img src="/public/images/blogLamps.png" alt="#"/>
+                            <img src="/images/blogLamps.png" alt="#"/>
                         </div>
                 </div>
             </div>
